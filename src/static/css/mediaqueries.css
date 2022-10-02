@@ -1,0 +1,135 @@
+/*--- PROPIEDADES HASTA 280px ---*/
+@media (max-width: 280px) {
+  .hero-content {
+    margin-top: 300px;
+  }
+  .hero-content > h1 {
+    font-size: 2rem;
+  }
+  .hero-content > p {
+    font-size: 0.9rem;
+  }
+  .hero-right > img {
+    width: 420px;
+  }
+}
+
+/*--- PROPIEDADES A PARTIR DE 520px ---*/
+@media (min-width: 520px) {
+  .hero-content > h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content > p {
+    font-size: 1.2rem;
+  }
+}
+
+/*--- PROPIEDADES DESDE 520px HASTA 640px ---*/
+@media (max-width: 640px) {
+  .aboutme-container {
+    width: 100%;
+    height: 80vh;
+  }
+  .hero-content > h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content > p {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .card-contact-container {
+    width: 90%;
+  }
+  .contact-container {
+    height: 90vh;
+    background-size: 260px;
+  }
+}
+
+/*--- PROPIEDADES A PARTIR DE 640px ---*/
+@media (min-width: 640px) {
+  .hero-content > p {
+    font-size: 1.4rem;
+  }
+}
+
+/*--- PROPIEDADES DESDE 640px HASTA 780px ---*/
+@media (max-width: 780px) {
+  header {
+    padding: 20px 0px;
+    height: auto;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .header-logo {
+    width: 150px;
+    height: auto;
+  }
+  .header-container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-container-menu {
+    width: 100%;
+  }
+  .button-contact {
+    display: none;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .hero-content {
+    margin-top: 200px;
+  }
+
+  .hero-left {
+    width: 100%;
+    height: 60%;
+    padding: 50px;
+  }
+  .hero-right {
+    width: 100%;
+    height: 40%;
+  }
+  .hero-right > img {
+    bottom: 70px;
+    width: 600px;
+    right: 0;
+  }
+  .header-container-buttons {
+    width: 100%;
+  }
+}
+
+/*--- PROPIEDADES DESDE 780px ---*/
+@media (min-width: 780px) {
+  .hero-left {
+    padding: 70px;
+  }
+  .hero-content > h1 {
+    font-size: 3.5rem;
+  }
+  .hero-content > p {
+    font-size: 1.3rem;
+  }
+}
+
+/*--- PROPIEDADES HASTA 900px ---*/
+@media (max-width: 900px) {
+  .card-contact-container {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 10px;
+    gap: 30px;
+  }
+  .left-contact,
+  .right-contact {
+    width: 100%;
+  }
+}

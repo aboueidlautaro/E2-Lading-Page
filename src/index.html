@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burguer Factory</title>
     <link rel="stylesheet" href="./static/css/format.css" />
+    <link rel="stylesheet" href="./static/css/animations.css" />
+    <link rel="stylesheet" href="./static/css/mediaqueries.css" />
     <link
       rel="shortcut icon"
       href="./static/images/favicon/favicon.ico"
@@ -28,69 +30,184 @@
       href="./static/images/favicon/apple-touch-icon-32x32.png"
     />
   </head>
+
   <body>
     <header>
-      <section class="header-container">
-        <article class="header-container-logo">
-          <img
-            src="./static/images/zavod_x_burguer_factory2.png"
-            class="header-logo"
-          />
-          <button class="button-contact-responsive">CONTACTANOS</button>
-        </article>
-        <article class="header-container-menu">
-          <nav>
-            <ul class="container-menu">
-              <li><a class="button-menu" href="#">INICIO</a></li>
-              <li><a class="button-menu" href="#">PRODUCTOS</a></li>
-              <li><a class="button-menu" href="#">TAKE AWAY</a></li>
-            </ul>
-          </nav>
-        </article>
-        <article class="header-container-buttons">
-          <a href="contact.html" class="button-contact">CONTACTANOS</a>
-        </article>
-      </section>
+      <article class="header-container-logo">
+        <img src="./static/images/zavod_x_burguer_factory2.png" />
+      </article>
+      <article class="header-container-menu">
+        <nav>
+          <ul class="container-menu">
+            <a class="button-menu" href="#"><span>INICIO</span></a>
+            <a class="button-menu" href="#"><span>PRODUCTOS</span></a>
+            <a class="button-menu" href="#"><span>TAKE AWAY</span></a>
+          </ul>
+        </nav>
+      </article>
+
+      <a href="contact.html" class="btn-primary">CONTACTANOS</a>
     </header>
 
-    <section class="hero-container">
-      <article class="hero-left">
-        <div class="hero-left-container">
-          <div class="hero-title">
-            <h1>Burguer Factory</h1>
-          </div>
-          <div class="hero-content">
-            <p class="hero-description">
+    <main>
+      <section class="hero-container">
+        <article class="hero-left center-vertical">
+          <div class="hero-content center-vertical">
+            <h1 class="text-gradient-primary">Burguer Factory</h1>
+
+            <p>
               Disfrutar de una exquisita hamburguesa no tiene hora ni fecha en
               el calendario. Visita nuestro local, hoy mismo y empezá a degustar
               lo mejor de la ciudad.
             </p>
-            <a href="contact.html" class="button-hero">¿Dónde estamos?</a>
+            <a href="contact.html" class="btn-primary">¿Dónde estamos?</a>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="hero-right">
-        <img src="./static/images/undraw_hamburger_re_7sfy.svg" alt="" />
-      </article>
-    </section>
+        <article class="hero-right center-vertical">
+          <img src="./static/images/asdasdasd.png" />
+        </article>
+      </section>
 
-    <section class="aboutme-container">
-      <article class="aboutme-content">
+      <section class="aboutme-container center-vertical">
+        <h2 class="title text-gradient-primary">SOBRE NOSOTROS</h2>
         <p>
-          En Eat Me Madrid Restaurante, ya no solo puedes encontrar las
-          hamburguesas gourmet elaboradas con la mejor materia prima, como la
-          famosa carne de La Finca, deliciosas patatas fritas de elaboración
-          casera, sino que puedes encontrar nuevas recetas de veggie burgers,
-          ensaladas o Bowls para los fans de la comida sana. Además, contamos
-          con la mejor selección de cervezas internacionales (Stella Artois,
-          Mahou, Corona, Franziskaner, Modelo o Budweiser) y vinos nacionales.
+          En <b>Burguer Factory</b>, ya no solo encontras las mejores
+          hamburguesas gourmet hechas con la mejor calidad, como la famosa carne
+          de La Finca, deliciosas papas fritas de elaboración casera, sino que
+          podes encontrar nuevas recetas de veggie burgers, ensaladas o Bowls
+          para los fans de la comida sana.
         </p>
-        <span
-          >No dudes en probarnos en nuestra página de
-          <a href="#" class="link-productos">PRODUCTOS</a> !</span
-        >
-      </article>
-    </section>
+        <span>
+          ¡No dudes en probarlas, mirá nuestro menú en la sección de
+          <a href="#"><b>PRODUCTOS</b></a> !
+        </span>
+      </section>
+
+      <section class="cards-container center-vertical">
+        <h2 class="title text-gradient-primary">Nuestro menú</h2>
+        <article class="cards-section-container">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-content-image">
+                <img src="./static/images/product-1.png" />
+              </div>
+
+              <div class="card-content-info">
+                <h3>HAMBURGUESAS GOURMET</h3>
+                <p>
+                  Las mejores hamburguesas, hechas con carne de primera calidad
+                  al grill.
+                </p>
+                <button class="btn-secondary">VER MÁS</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-content-image">
+                <img src="./static/images/product-2.png" />
+              </div>
+
+              <div class="card-content-info">
+                <h3>HAMBURGUESAS VEGGIE</h3>
+                <p>
+                  ¿No comes carne? Factory te ofrece una gran variedad de
+                  opciones veggie.
+                </p>
+                <button class="btn-secondary">VER MÁS</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-content-image">
+                <img src="./static/images/product-3.png" />
+              </div>
+
+              <div class="card-content-info">
+                <h3>BOWLS & ENSALADAS</h3>
+                <p>
+                  ¿Buscas una opción más saludable? En Factory hay variedad de
+                  ensaladas y bowls.
+                </p>
+                <button class="btn-secondary">VER MÁS</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact-container">
+        <article class="card-contact-container center-vertical">
+          <div class="left-contact center-vertical">
+            <h2 class="subtitle">CONTACTANOS</h2>
+            <p>
+              ¿Querés saber más de nuestros productos?<br />¿Tenés alguna
+              consulta?<br />
+              ¡No dudes en contactarnos!
+            </p>
+            <a href="contact.html" class="btn-secondary">ENVIAR MENSAJE</a>
+          </div>
+          <div class="right-contact center-vertical">
+            <div class="right-contact-elements">
+              <div class="burguer-container">
+                <div class="burguer">
+                  <div class="bread-top">
+                    <div class="mark"></div>
+                    <div class="mark"></div>
+                    <div class="mark"></div>
+                    <div class="mark"></div>
+                    <div class="speed"></div>
+                  </div>
+                  <div class="ingredients">
+                    <div class="ing1">
+                      <div class="speed"></div>
+                    </div>
+                    <div class="ing2"></div>
+                    <div class="ing3"></div>
+                    <div class="ing4">
+                      <div class="speed"></div>
+                    </div>
+                  </div>
+                  <div class="bread-bottom">
+                    <div class="speed"></div>
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left-contact-elements center-vertical">
+                <h3 class="subtitle">¿Cero ganas de cocinar?</h3>
+                <p>
+                  ¡No te preocupes!<br />
+                  Nosotros cocinamos por vos y lo llevamos a la puerta de tu
+                  casa.
+                </p>
+                <button class="btn-primary">PEDIR</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <img src="./static/images/zavod_x_burguer_factory2.png" />
+      <span>Design byDizeid for Burguer Factory</span>
+      <div>
+        <a href="#" target="_blank">
+          <img src="./static/images/redes/1.svg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="./static/images/redes/2.svg" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="./static/images/redes/3.svg" />
+        </a>
+      </div>
+    </footer>
   </body>
+
+  <!--  -------  EN LAS PRIMERAS ENTREGAS NO TUVE MUCHO TIEMPO DE DEDICARLE A LOS ESTILOS, MIL DISCULPAS RODRI :C  ------ -->
 </html>
